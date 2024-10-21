@@ -27,6 +27,7 @@ class Node:
         if self.rightNode is not None:
             self.rightNode.print()
 
+# Sets up the binary tree
 root = Node(50, None, None)
 root.add(Node(60, None, None))
 root.add(Node(40, None, None))
