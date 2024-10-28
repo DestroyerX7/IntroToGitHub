@@ -5,7 +5,7 @@ class Node:
         self.num = num
 
     def add(self, node):
-        if node.num > self.num:
+        if node.num >= self.num:
             if self.rightNode is None:
                 self.rightNode = node
             else:
@@ -15,8 +15,6 @@ class Node:
                 self.leftNode = node
             else:
                 self.leftNode.add(node)
-        else:
-            print("Duplicate num not added")
 
     def print(self):
         if self.leftNode is not None:
